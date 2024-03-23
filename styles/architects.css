@@ -90,7 +90,9 @@ main {
 }
 
 section {
-    padding: 0 20px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* teams style */
@@ -161,6 +163,22 @@ section {
     color: #727272;
 }
 
+/* sponsors styles */
+.sponsors .section-title {
+    text-align: center;
+}
+
+.sponsors .description {
+    text-align: center;
+}
+
+.sponsors-img-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* responsive styles */
 /* mobile devices */
 @media screen and (max-width: 576px) {
@@ -210,6 +228,11 @@ section {
     .facts-card-container .card {
         margin-bottom: 10px;
     }
+
+    .sponsors-img-container {
+        flex-direction: column;
+        gap: 30px;
+    }
 }
 
 /* tablet or medium devices */
@@ -255,5 +278,10 @@ section {
 
     .facts-card-container .card {
         margin-bottom: 10px;
+    }
+
+    .sponsors-img-container {
+        flex-direction: column;
+        gap: 30px;
     }
 }
